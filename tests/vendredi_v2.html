@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	
+
 	<title>Agile Tour Rennes 2019 - Programme du vendredi</title>
 
 	<link href="programmes.css" rel="stylesheet" type="text/css" media="screen">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	
+
 	<script language="javascript" type="application/javascript">
 		function isotopeLoad() {
 			$grid = jQuery('.grid').isotope({
@@ -16,14 +16,14 @@
 					columnWidth: '.grid-sizer'
 				}
 			});
-			
+
 			isotopeResize();
-			
+
 			$('.filter-button-group').on( 'click', '.button', function() {
 				var filterValue = $(this).attr('data-filter');
 				$grid.isotope({ filter: filterValue });
 			});
-			
+
 			$('.filter-custom-select').on( 'change', function() {
 				$('.grid-item').width('99.6%');
 				var filterValue = $(this).val();
@@ -36,13 +36,13 @@
 			$('.CF').css({opacity:1});
 			$('.AJ').css({opacity:1});
 			$('.TR').css({opacity:1});
-			$('.RE').css({opacity:1});				
+			$('.RE').css({opacity:1});
 			$('.grid-item').width('16.4%');
 			$('.grid-item--width2').width('33%');
 			$('.grid-item--width3').width('49.6%');
 			$('.grid-item--width4').width('66.2%');
-			$('.grid-item--width5').width('82.8%');		
-			$('.grid-item--width6').width('99.4%');		
+			$('.grid-item--width5').width('82.8%');
+			$('.grid-item--width6').width('99.4%');
 		}
 		function resizeThemes() {
 			$('.KN').css({opacity:1});
@@ -71,14 +71,14 @@
 				$('select').css('height', '2.26rem');
 			}
 		}
-		
+
 		function showType(t) {
 			if($('.' + t).css('opacity') == 0.99) {
 				$('.KN').css({opacity:1});
 				$('.CF').css({opacity:1});
 				$('.AJ').css({opacity:1});
 				$('.TR').css({opacity:1});
-				$('.RE').css({opacity:1});				
+				$('.RE').css({opacity:1});
 			} else {
 				$('.KN').css({opacity:0.3});
 				$('.CF').css({opacity:0.3});
@@ -88,7 +88,7 @@
 				$('.' + t).css({opacity:0.99});
 			}
 		}
-		
+
 		window.addEventListener("orientationchange", function() {
 			isotopeResize();
 		});
@@ -101,7 +101,7 @@
 			<h1>Agile Tour Rennes - Vendredi 22 novembre</h1>
 			<!--div class="col-12 alert alert-secondary d-none d-md-block ordi"-->
 			<div class="col-12 alert alert-secondary ordi">
-				<div class="filter-button-group" data-filter-group="FiltresOrdi">					
+				<div class="filter-button-group" data-filter-group="FiltresOrdi">
 					<span style="margin-left:50px;">Filtrez sur un horaire : </span>
 					<button class="button is-checked" data-filter="" onclick="resizeAll();">Tout voir</button>
 					<button class="button" data-filter=".AM1" onclick="resizeAll();">9h00</button>
@@ -123,12 +123,12 @@
 					</div>
 				</div>
 				<div style="margin-top:0.8em;">
-					<span style="margin-left:50px;">Mettez en évidence : </span> 
-					<button class="button KN" onclick="showType(&#39;KN&#39;);" style="opacity: 1;">Keynote</button>
-					<button class="button CF" onclick="showType(&#39;CF&#39;);" style="opacity: 1;">Conférence</button>
-					<button class="button AJ" onclick="showType(&#39;AJ&#39;);" style="opacity: 1;">Atelier / Jeu</button>
-					<button class="button RE" onclick="showType(&#39;RE&#39;);" style="opacity: 1;">Retour d'expérience</button>
-					<button class="button TR" onclick="showType(&#39;TR&#39;);" style="opacity: 1;">Table ronde</button>
+					<span style="margin-left:50px;">Mettez en évidence : </span>
+					<button class="button KN" onclick="showType('KN');" style="opacity: 1;">Keynote</button>
+					<button class="button CF" onclick="showType('CF');" style="opacity: 1;">Conférence</button>
+					<button class="button AJ" onclick="showType('AJ');" style="opacity: 1;">Atelier / Jeu</button>
+					<button class="button RE" onclick="showType('RE');" style="opacity: 1;">Retour d'expérience</button>
+					<button class="button TR" onclick="showType('TR');" style="opacity: 1;">Table ronde</button>
 				</div>
 			</div>
 			<!--div class="input-group mb-3 telephone d-md-none" data-filter-group="FiltresTelephone"-->
@@ -230,7 +230,7 @@
 					<div>
 						<div class="debut heure">10h30</div>
 						<div class="salle heure">GC</div>
-						<a href="https://app.klaxoon.com/userspace/networks/appel-a-orateurs-agile-tour-rennes-2019/articles/transformation-agile-arretons-de-suivre-aveuglement-des-frameworks">
+						<a href="#" class="portfolio-link" data-toggle="modal" data-target="#modalTransfoAgile">
 							<div class="parent grid-item--height3"><!-- data-toggle="modal" data-target="#klaxoonBox"-->
 								<div class="enfant">
 									<h3>Transformation agile : arrêtons de suivre aveuglément des frameworks</h3>
@@ -238,6 +238,9 @@
 								</div>
 							</div>	
 						</a>
+
+
+
 					<div class="fin heure">11h30</div>
 					</div>
 				</div>
@@ -697,8 +700,8 @@
 			</div>
 		</div>
 	</div>
-	
-	
+
+
 	<div class="modal fade" id="infos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
   		<div class="modal-dialog" role="document">
     		<div class="modal-content">
@@ -724,8 +727,8 @@
     		</div>
   		</div>
 	</div>
-	
-	
+
+
 	<div class="place-bt-infos-ordi ordi">
 		<button class="bt-infos" type="button" data-toggle="modal" data-target="#infos">
 			<i class="material-icons" style="font-size:3em; color:#ff6600;">info</i>
@@ -739,6 +742,59 @@
 		</button>
 	</div>
 
+	<div class="modal fade" id="modalTransfoAgile" tabindex="-1" role="dialog" aria-labelledby="modalTransfoAgileLabel"
+		 aria-hidden="true">
+		<div class="modal-dialog modal-xl" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div style="display: flex; justify-content: space-between">
+						<h2>Transformation agile : arrêtons de suivre aveuglément des frameworks</h2>
+						<a href="#" data-dismiss="modal">X</a>
+					</div>
+					<hr/>
+					<div style="display:flex">
+						<div class="CF" style="width:2rem">&nbsp;</div>
+						<div style="margin-left:1rem">Conférence</div>
+					</div>
+					<hr/>
+					<p style="text-align: justify">
+					70% des changements organisationnels échouent.
+					</p>
+					<br/>
+					<p style="text-align: justify">
+					Vous avez sûrement entendu ce chiffre à de nombreuses reprises pourtant… Cette statistique, répétée à l’unisson par de nombreux conférenciers, est un mythe. Un mythe tenace qui a un effet dévastateur : il rend, dans l’imaginaire collectif, le changement au sein d’une organisation difficile voire impossible, il impose inconsciemment le suivi scrupuleux d’un framework (SAFe, LeSS, Nexus…) pour éviter tout échec. Seulement, imiter aveuglément un framework est un piège.
+					</p>
+					<br/>
+					<p style="text-align: justify">
+					Bien lancer et réussir la transformation de son entreprise ne dépend pas d'un cadre ou d'une méthode. C'est un effort, long certes, mais à la portée de tous à condition de se poser les bonnes questions.
+					</p>
+					<br/>
+					<p style="text-align: justify">
+						Objectif :
+					</p>
+					<br/>
+					<p style="text-align: justify">
+						Démystifier le changement organisationnel et présenter les bonnes questions à se poser au bon moment pour réussir une transformation.
+					</p>
+					<hr/>
+
+					<div>
+						<img src="orateurs/denis-migot.jpg" style="height:8rem"/>
+						Denis Migot - <a href="https://twitter.com/DenisMigot">@DenisMigot</a>
+					</div>
+					<br/>
+					<p style="text-align: justify">
+					Je suis coach organisationnel et formateur avec 15 années d’expérience aussi bien en France qu'au Canada. Je suis également l’auteur du Guide de la transformation organisationnelle à l’usage des managers et dirigeants ainsi que de nombreux articles publiés chez Forbes, Les Echos, l’Usine Digitale ou encore le Journal du Net
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>
+						Fermer
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
