@@ -5,11 +5,12 @@
 
 	<link href="programmes.css" rel="stylesheet" type="text/css" media="screen">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
 
 	<script language="javascript" type="application/javascript">
 		function isotopeLoad() {
-			$grid = jQuery('.grid').isotope({
+			$grid = jQuery('.grid').isotope(
+					{
 				itemSelector: '.grid-item',
 				percentPosition: true,
 				masonry: {
@@ -129,6 +130,9 @@
 					<button class="button AJ" onclick="showType('AJ');" style="opacity: 1;">Atelier / Jeu</button>
 					<button class="button RE" onclick="showType('RE');" style="opacity: 1;">Retour d'expérience</button>
 					<button class="button TR" onclick="showType('TR');" style="opacity: 1;">Table ronde</button>
+				</div>
+				<div style="margin-top:0.8em;margin-left:50px;display:flex">
+					<i class="material-icons-outlined">lock</i>Session limitée en nombre de participants
 				</div>
 			</div>
 			<!--div class="input-group mb-3 telephone d-md-none" data-filter-group="FiltresTelephone"-->
@@ -253,6 +257,10 @@
 								<div class="enfant">
 									<h3>Agil'o Park, un serious game pour apprendre à prioriser</h3>
 									<p>Aurélie ROBERT &amp; Antony GUILLOTEAU</p>
+									<div class="limite-participants"><i class="material-icons-outlined">
+										lock
+									</i>24
+									</div>
 								</div>
 							</div>
 						</a>
@@ -283,6 +291,10 @@
 								<div class="enfant">
 									<h3>Initiation à la Systémique interactionnelle</h3>
 									<p>Christophe KEROMEN</p>
+									<div class="limite-participants"><i class="material-icons-outlined">
+										lock
+									</i>30
+									</div>
 								</div>
 							</div>
 						</a>
@@ -298,6 +310,10 @@
 								<div class="enfant">
 									<h3>Facilitation Graphique, passez à l'action !</h3>
 									<p>Fany BERTHELOT &amp; Estelle VIOT</p>
+									<div class="limite-participants"><i class="material-icons-outlined">
+										lock
+									</i>20
+									</div>
 								</div>
 							</div>
 						</a>
@@ -362,6 +378,10 @@
 								<div class="enfant">
 									<h3>Améliorer son feedback, exemple en revue de code</h3>
 									<p>Julien CIME</p>
+									<div class="limite-participants"><i class="material-icons-outlined">
+										lock
+									</i>16
+									</div>
 								</div>
 							</div>
 						</a>
@@ -459,6 +479,10 @@
 								<div class="enfant">
 									<h3>Un Pacman Ping ? Ou Impact Mapping ?</h3>
 									<p>Alexandre SICARD & Arnaud FLORENTIN</p>
+									<div class="limite-participants"><i class="material-icons-outlined">
+										lock
+									</i>30
+									</div>
 								</div>
 							</div>
 						</a>
@@ -474,6 +498,10 @@
 								<div class="enfant">
 									<h3>Coding Dojos : partagez les bonnes pratiques</h3>
 									<p>Pascal LE MERRER</p>
+									<div class="limite-participants"><i class="material-icons-outlined">
+										lock
+									</i>30
+									</div>
 								</div>
 							</div>
 						</a>
@@ -489,6 +517,10 @@
 								<div class="enfant">
 									<h3>Cook my Retro !</h3>
 									<p>Jean-Baptiste LE GOFF &amp; Kavishan GANESHAMOORTHY</p>
+									<div class="limite-participants"><i class="material-icons-outlined">
+										lock
+									</i>24
+									</div>
 								</div>
 							</div>
 						</a>
@@ -504,6 +536,10 @@
 								<div class="enfant">
 									<h3>Mes premiers pas de Scrum Master</h3>
 									<p>Elodie TUAL &amp; Maryline ESTIVAL</p>
+									<div class="limite-participants"><i class="material-icons-outlined">
+										lock
+									</i>25
+									</div>
 								</div>
 							</div>
 						</a>
@@ -544,7 +580,7 @@
 						<div class="fin heure">16h40</div>
 					</div>
 				</div>
-				<div class="grid-item grid-item--height3 c5 PM3 AJ" style="position: absolute; left: 66.3999%; top: 1252px; opacity: 1; width: 16.4%; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms; transform: translate3d(-0.001px, 0px, 0px);">
+				<div class="grid-item grid-item--height3 c5 PM3 CF" style="position: absolute; left: 66.3999%; top: 1252px; opacity: 1; width: 16.4%; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms; transform: translate3d(-0.001px, 0px, 0px);">
 					<div>
 						<div class="debut heure">15h50</div>
 						<div class="salle heure">C</div>
@@ -614,6 +650,10 @@
 								<div class="enfant">
 									<h3>On sait par où on commence mais on ne sait pas si et où on en sortira</h3>
 									<p>Olivier RENVERSEAU & Gilles GUYONVARC’H</p>
+									<div class="limite-participants"><i class="material-icons-outlined">
+										lock
+									</i>10
+									</div>
 								</div>
 							</div>
 						</a>
@@ -847,9 +887,14 @@
 						<a href="#" data-dismiss="modal">X</a>
 					</div>
 					<hr/>
-					<div style="display:flex">
-						<div class="AJ" style="width:2rem">&nbsp;</div>
-						<div style="margin-left:1rem">Atelier / Jeu</div>
+					<div style="display:flex;justify-content: space-between">
+						<div style="display:flex">
+							<div class="AJ" style="width:2rem;height: 1.5rem">&nbsp;</div>
+							<div style="margin-left:1rem">Atelier / Jeu</div>
+						</div>
+						<div class="limite-participants-details"><i class="material-icons-outlined">
+							lock
+						</i>24 participants</div>
 					</div>
 					<hr/>
 					<p style="text-align: justify">Découvrez le rôle de Product Owner en vous glissant dans la peau d’un gérant de parc attraction.&nbsp;</p>
@@ -932,9 +977,14 @@ Mon but est d'accompagner tout le monde afin d’élever le niveau.
 						<a href="#" data-dismiss="modal">X</a>
 					</div>
 					<hr/>
-					<div style="display:flex">
-						<div class="AJ" style="width:2rem">&nbsp;</div>
-						<div style="margin-left:1rem">Atelier / Jeu</div>
+					<div style="display:flex;justify-content: space-between">
+						<div style="display:flex">
+							<div class="AJ" style="width:2rem;height: 1.5rem">&nbsp;</div>
+							<div style="margin-left:1rem">Atelier / Jeu</div>
+						</div>
+						<div class="limite-participants-details"><i class="material-icons-outlined">
+							lock
+						</i>30 participants</div>
 					</div>
 					<hr/>
 					<p style="text-align: justify">
@@ -975,9 +1025,14 @@ Mon but est d'accompagner tout le monde afin d’élever le niveau.
 						<a href="#" data-dismiss="modal">X</a>
 					</div>
 					<hr/>
-					<div style="display:flex">
-						<div class="AJ" style="width:2rem">&nbsp;</div>
-						<div style="margin-left:1rem">Atelier / Jeu</div>
+					<div style="display:flex;justify-content: space-between">
+						<div style="display:flex">
+							<div class="AJ" style="width:2rem;height: 1.5rem">&nbsp;</div>
+							<div style="margin-left:1rem">Atelier / Jeu</div>
+						</div>
+						<div class="limite-participants-details"><i class="material-icons-outlined">
+							lock
+						</i>20 participants</div>
 					</div>
 					<hr/>
 					<p style="text-align: justify">Vous avez déjà entendu parler de Facilitation Graphique, Sketchnoting, Scribing, Facilitation Visuelle, Mindmapping, Pensée Visuelle, etc., et vous êtes perdus ?</p>
@@ -1163,9 +1218,14 @@ J’organise et anime des ateliers sur la facilitation graphique, j’ai partici
 						<a href="#" data-dismiss="modal">X</a>
 					</div>
 					<hr/>
-					<div style="display:flex">
-						<div class="AJ" style="width:2rem">&nbsp;</div>
-						<div style="margin-left:1rem">Atelier / Jeu</div>
+					<div style="display:flex;justify-content: space-between">
+						<div style="display:flex">
+							<div class="AJ" style="width:2rem;height: 1.5rem">&nbsp;</div>
+							<div style="margin-left:1rem">Atelier / Jeu</div>
+						</div>
+						<div class="limite-participants-details"><i class="material-icons-outlined">
+							lock
+						</i>16 participants</div>
 					</div>
 					<hr/>
 					<p style="text-align: justify">
@@ -1334,9 +1394,14 @@ J’organise et anime des ateliers sur la facilitation graphique, j’ai partici
 						<a href="#" data-dismiss="modal">X</a>
 					</div>
 					<hr/>
-					<div style="display:flex">
-						<div class="AJ" style="width:2rem">&nbsp;</div>
-						<div style="margin-left:1rem">Atelier/Jeu</div>
+					<div style="display:flex;justify-content: space-between">
+						<div style="display:flex">
+							<div class="AJ" style="width:2rem;height: 1.5rem">&nbsp;</div>
+							<div style="margin-left:1rem">Atelier / Jeu</div>
+						</div>
+						<div class="limite-participants-details"><i class="material-icons-outlined">
+							lock
+						</i>30 participants</div>
 					</div>
 					<hr/>
 					<p style="text-align: justify">
@@ -1385,9 +1450,14 @@ J’organise et anime des ateliers sur la facilitation graphique, j’ai partici
 						<a href="#" data-dismiss="modal">X</a>
 					</div>
 					<hr/>
-					<div style="display:flex">
-						<div class="AJ" style="width:2rem">&nbsp;</div>
-						<div style="margin-left:1rem">Atelier/Jeu</div>
+					<div style="display:flex;justify-content: space-between">
+						<div style="display:flex">
+							<div class="AJ" style="width:2rem;height: 1.5rem">&nbsp;</div>
+							<div style="margin-left:1rem">Atelier / Jeu</div>
+						</div>
+						<div class="limite-participants-details"><i class="material-icons-outlined">
+							lock
+						</i>30 participants</div>
 					</div>
 					<hr/>
 					<p style="text-align: justify">
@@ -1425,9 +1495,14 @@ J’organise et anime des ateliers sur la facilitation graphique, j’ai partici
 						<a href="#" data-dismiss="modal">X</a>
 					</div>
 					<hr/>
-					<div style="display:flex">
-						<div class="AJ" style="width:2rem">&nbsp;</div>
-						<div style="margin-left:1rem">Atelier/Jeu</div>
+					<div style="display:flex;justify-content: space-between">
+						<div style="display:flex">
+							<div class="AJ" style="width:2rem;height: 1.5rem">&nbsp;</div>
+							<div style="margin-left:1rem">Atelier / Jeu</div>
+						</div>
+						<div class="limite-participants-details"><i class="material-icons-outlined">
+							lock
+						</i>24 participants</div>
 					</div>
 					<hr/>
 					<p style="text-align: justify">
@@ -1467,9 +1542,14 @@ J’organise et anime des ateliers sur la facilitation graphique, j’ai partici
 						<a href="#" data-dismiss="modal">X</a>
 					</div>
 					<hr/>
-					<div style="display:flex">
-						<div class="TR" style="width:2rem">&nbsp;</div>
-						<div style="margin-left:1rem">Table ronde</div>
+					<div style="display:flex;justify-content: space-between">
+						<div style="display:flex">
+							<div class="TR" style="width:2rem;height: 1.5rem">&nbsp;</div>
+							<div style="margin-left:1rem">Table ronde</div>
+						</div>
+						<div class="limite-participants-details"><i class="material-icons-outlined">
+							lock
+						</i>25 participants</div>
 					</div>
 					<hr/>
 					<p style="text-align: justify">
@@ -1634,8 +1714,8 @@ J’organise et anime des ateliers sur la facilitation graphique, j’ai partici
 					</div>
 					<hr/>
 					<div style="display:flex">
-						<div class="AJ" style="width:2rem">&nbsp;</div>
-						<div style="margin-left:1rem">Atelier/Jeu</div>
+						<div class="CF" style="width:2rem">&nbsp;</div>
+						<div style="margin-left:1rem">Conférence</div>
 					</div>
 					<hr/>
 					<p style="text-align: justify">
@@ -1763,9 +1843,14 @@ J’organise et anime des ateliers sur la facilitation graphique, j’ai partici
 						<a href="#" data-dismiss="modal">X</a>
 					</div>
 					<hr/>
-					<div style="display:flex">
-						<div class="AJ" style="width:2rem">&nbsp;</div>
-						<div style="margin-left:1rem">Atelier/Jeu</div>
+					<div style="display:flex;justify-content: space-between">
+						<div style="display:flex">
+							<div class="AJ" style="width:2rem;height: 1.5rem">&nbsp;</div>
+							<div style="margin-left:1rem">Atelier / Jeu</div>
+						</div>
+						<div class="limite-participants-details"><i class="material-icons-outlined">
+							lock
+						</i>10 participants</div>
 					</div>
 					<hr/>
 					<p style="text-align: justify">

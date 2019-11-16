@@ -175,3 +175,13 @@ i {
 #infos .modal-dialog .telephone img {
 	max-width:100% !important;
 }
+
+.limite-participants {
+	display:flex;
+	justify-content: center;
+}
+
+.limite-participants-details {
+	display:flex;
+	justify-content: left;
+}
