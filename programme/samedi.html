@@ -6,7 +6,7 @@
 
 	<link href="programmes.css" rel="stylesheet" type="text/css" media="screen">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
 	
 	<script language="javascript" type="application/javascript">
 		function isotopeLoad() {
@@ -131,6 +131,9 @@
 					<button class="button RE" onclick="showType('RE');" style="opacity: 1;">Retour d'expérience</button>
 					<button class="button TR" onclick="showType('TR');" style="opacity: 1;">Table ronde</button>
 				</div>
+				<div style="margin-top:0.8em;margin-left:50px;display:flex">
+					<i class="material-icons-outlined">lock</i>Session limitée en nombre de participants
+				</div>
 			</div>
 			<!--div class="input-group mb-3 telephone d-md-none" data-filter-group="FiltresTelephone"-->
 			<div class="input-group telephone" data-filter-group="FiltresTelephone" style="display: none;">
@@ -224,6 +227,10 @@
 								<div class="enfant">
 									<h3>Fish Philosophy</h3>
 									<p>Kervin KUENY</p>
+									<div class="limite-participants"><i class="material-icons-outlined">
+										lock
+									</i>24
+									</div>
 								</div>
 							</div>
 						</a>
@@ -285,6 +292,10 @@
 								<div class="enfant">
 									<h3>Le défi collaboratif Lego - Testez votre agilité collective !</h3>
 									<p>Damien ROQUEL</p>
+									<div class="limite-participants"><i class="material-icons-outlined">
+										lock
+									</i>40
+									</div>
 								</div>
 							</div>
 						</a>
@@ -315,6 +326,10 @@
 								<div class="enfant">
 									<h3>Devenez une famille Agile</h3>
 									<p>Alexandrine BARBIEUX &amp; Apolline LOUBRADOU</p>
+									<div class="limite-participants"><i class="material-icons-outlined">
+										lock
+									</i>25
+									</div>
 								</div>
 							</div>
 						</a>
@@ -330,6 +345,10 @@
 								<div class="enfant">
 									<h3>Dessine les super-pouvoirs d'un chevalier</h3>
 									<p>Fany BERTHELOT</p>
+									<div class="limite-participants"><i class="material-icons-outlined">
+										lock
+									</i>20
+									</div>
 								</div>
 							</div>
 						</a>
@@ -460,6 +479,10 @@
 								<div class="enfant">
 									<h3>Qui veut créer son jeu péda ?</h3>
 									<p>Suzon BEAUSSANT</p>
+									<div class="limite-participants"><i class="material-icons-outlined">
+										lock
+									</i>40
+									</div>
 								</div>
 							</div>
 						</a>
@@ -490,6 +513,10 @@
 								<div class="enfant">
 									<h3>La sûreté psychologique, pour un collectif performant</h3>
 									<p>Céline SWIERKOWSKI</p>
+									<div class="limite-participants"><i class="material-icons-outlined">
+										lock
+									</i>30
+									</div>
 								</div>
 							</div>
 						</a>
@@ -520,6 +547,10 @@
 							<div class="enfant">
 								<h3>Devoxx For Kids</h3>
 								<p>Nicolas LEDEZ</p>
+								<div class="limite-participants"><i class="material-icons-outlined">
+									lock
+								</i>20
+								</div>
 							</div>
 						</div>
 						</a>
@@ -554,6 +585,10 @@
 								<div class="enfant">
 									<h3>Personal Kanban pour petits et grands</h3>
 									<p>Simon Pichon</p>
+									<div class="limite-participants"><i class="material-icons-outlined">
+										lock
+									</i>12
+									</div>
 								</div>
 							</div>
 						</a>
@@ -569,6 +604,10 @@
 								<div class="enfant">
 									<h3>Saving the world</h3>
 									<p>Karine SABATIER, Serge HARDY, Sylvain REVEREAULT, Antoine CAILLY &amp; Luc SOREL-GIFFO</p>
+									<div class="limite-participants"><i class="material-icons-outlined">
+										lock
+									</i>50
+									</div>
 								</div>
 							</div>
 						</a>
@@ -584,6 +623,10 @@
 								<div class="enfant">
 									<h3>Toyota Kata : apprendre facilement une démarche d'amélioration continue</h3>
 									<p>Anne GABRILLAGUES</p>
+									<div class="limite-participants"><i class="material-icons-outlined">
+										lock
+									</i>25
+									</div>
 								</div>
 							</div>
 						</a>
@@ -675,6 +718,10 @@
 								<div class="enfant">
 									<h3>Pédagogie Agile</h3>
 									<p>Manuella CHAINOT-BATAILLE</p>
+									<div class="limite-participants"><i class="material-icons-outlined">
+										lock
+									</i>40
+									</div>
 								</div>
 							</div>
 						</a>
@@ -854,9 +901,14 @@
 						<a href="#" data-dismiss="modal">X</a>
 					</div>
 					<hr/>
-					<div style="display:flex">
-						<div class="AJ" style="width:2rem">&nbsp;</div>
-						<div style="margin-left:1rem">Atelier/Jeu</div>
+					<div style="display:flex;justify-content: space-between">
+						<div style="display:flex">
+							<div class="AJ" style="width:2rem;height: 1.5rem">&nbsp;</div>
+							<div style="margin-left:1rem">Atelier / Jeu</div>
+						</div>
+						<div class="limite-participants-details"><i class="material-icons-outlined">
+							lock
+						</i>24 participants</div>
 					</div>
 					<hr/>
 					<p style="text-align: justify">
@@ -936,9 +988,14 @@
 						<a href="#" data-dismiss="modal">X</a>
 					</div>
 					<hr/>
-					<div style="display:flex">
-						<div class="AJ" style="width:2rem">&nbsp;</div>
-						<div style="margin-left:1rem">Atelier / Jeu</div>
+					<div style="display:flex;justify-content: space-between">
+						<div style="display:flex">
+							<div class="AJ" style="width:2rem;height: 1.5rem">&nbsp;</div>
+							<div style="margin-left:1rem">Atelier / Jeu</div>
+						</div>
+						<div class="limite-participants-details"><i class="material-icons-outlined">
+							lock
+						</i>40 participants</div>
 					</div>
 					<hr/>
 					<p style="text-align: justify">
@@ -1006,9 +1063,14 @@
 						<a href="#" data-dismiss="modal">X</a>
 					</div>
 					<hr/>
-					<div style="display:flex">
-						<div class="AJ" style="width:2rem">&nbsp;</div>
-						<div style="margin-left:1rem">Atelier/Jeu</div>
+					<div style="display:flex;justify-content: space-between">
+						<div style="display:flex">
+							<div class="AJ" style="width:2rem;height: 1.5rem">&nbsp;</div>
+							<div style="margin-left:1rem">Atelier / Jeu</div>
+						</div>
+						<div class="limite-participants-details"><i class="material-icons-outlined">
+							lock
+						</i>25 participants</div>
 					</div>
 					<hr/>
 					<p style="text-align: justify">
@@ -1046,9 +1108,14 @@
 						<a href="#" data-dismiss="modal">X</a>
 					</div>
 					<hr/>
-					<div style="display:flex">
-						<div class="AJ" style="width:2rem">&nbsp;</div>
-						<div style="margin-left:1rem">Atelier/Jeu</div>
+					<div style="display:flex;justify-content: space-between">
+						<div style="display:flex">
+							<div class="AJ" style="width:2rem;height: 1.5rem">&nbsp;</div>
+							<div style="margin-left:1rem">Atelier / Jeu</div>
+						</div>
+						<div class="limite-participants-details"><i class="material-icons-outlined">
+							lock
+						</i>20 participants</div>
 					</div>
 					<hr/>
 					<p style="text-align: justify">
@@ -1256,9 +1323,14 @@
 						<a href="#" data-dismiss="modal">X</a>
 					</div>
 					<hr/>
-					<div style="display:flex">
-						<div class="AJ" style="width:2rem">&nbsp;</div>
-						<div style="margin-left:1rem">Atelier/Jeu</div>
+					<div style="display:flex;justify-content: space-between">
+						<div style="display:flex">
+							<div class="AJ" style="width:2rem;height: 1.5rem">&nbsp;</div>
+							<div style="margin-left:1rem">Atelier / Jeu</div>
+						</div>
+						<div class="limite-participants-details"><i class="material-icons-outlined">
+							lock
+						</i>40 participants</div>
 					</div>
 					<hr/>
 					<p style="text-align: justify">
@@ -1335,9 +1407,14 @@
 						<a href="#" data-dismiss="modal">X</a>
 					</div>
 					<hr/>
-					<div style="display:flex">
-						<div class="AJ" style="width:2rem">&nbsp;</div>
-						<div style="margin-left:1rem">Atelier/Jeu</div>
+					<div style="display:flex;justify-content: space-between">
+						<div style="display:flex">
+							<div class="AJ" style="width:2rem;height: 1.5rem">&nbsp;</div>
+							<div style="margin-left:1rem">Atelier / Jeu</div>
+						</div>
+						<div class="limite-participants-details"><i class="material-icons-outlined">
+							lock
+						</i>30 participants</div>
 					</div>
 					<hr/>
 					<p style="text-align: justify">
@@ -1411,9 +1488,14 @@
 						<a href="#" data-dismiss="modal">X</a>
 					</div>
 					<hr/>
-					<div style="display:flex">
-						<div class="AJ" style="width:2rem">&nbsp;</div>
-						<div style="margin-left:1rem">Atelier/Jeu</div>
+					<div style="display:flex;justify-content: space-between">
+						<div style="display:flex">
+							<div class="AJ" style="width:2rem;height: 1.5rem">&nbsp;</div>
+							<div style="margin-left:1rem">Atelier / Jeu</div>
+						</div>
+						<div class="limite-participants-details"><i class="material-icons-outlined">
+							lock
+						</i>20 participants</div>
 					</div>
 					<hr/>
 					<p style="text-align: justify">
@@ -1493,9 +1575,14 @@
 						<a href="#" data-dismiss="modal">X</a>
 					</div>
 					<hr/>
-					<div style="display:flex">
-						<div class="AJ" style="width:2rem">&nbsp;</div>
-						<div style="margin-left:1rem">Atelier/Jeu</div>
+					<div style="display:flex;justify-content: space-between">
+						<div style="display:flex">
+							<div class="AJ" style="width:2rem;height: 1.5rem">&nbsp;</div>
+							<div style="margin-left:1rem">Atelier / Jeu</div>
+						</div>
+						<div class="limite-participants-details"><i class="material-icons-outlined">
+							lock
+						</i>12 participants</div>
 					</div>
 					<hr/>
 					<p style="text-align: justify">
@@ -1535,9 +1622,14 @@
 						<a href="#" data-dismiss="modal">X</a>
 					</div>
 					<hr/>
-					<div style="display:flex">
-						<div class="AJ" style="width:2rem">&nbsp;</div>
-						<div style="margin-left:1rem">Atelier/Jeu</div>
+					<div style="display:flex;justify-content: space-between">
+						<div style="display:flex">
+							<div class="AJ" style="width:2rem;height: 1.5rem">&nbsp;</div>
+							<div style="margin-left:1rem">Atelier / Jeu</div>
+						</div>
+						<div class="limite-participants-details"><i class="material-icons-outlined">
+							lock
+						</i>50 participants</div>
 					</div>
 					<hr/>
 					<p style="text-align: justify">
@@ -1564,9 +1656,14 @@
 						<a href="#" data-dismiss="modal">X</a>
 					</div>
 					<hr/>
-					<div style="display:flex">
-						<div class="AJ" style="width:2rem">&nbsp;</div>
-						<div style="margin-left:1rem">Atelier/Jeu</div>
+					<div style="display:flex;justify-content: space-between">
+						<div style="display:flex">
+							<div class="AJ" style="width:2rem;height: 1.5rem">&nbsp;</div>
+							<div style="margin-left:1rem">Atelier / Jeu</div>
+						</div>
+						<div class="limite-participants-details"><i class="material-icons-outlined">
+							lock
+						</i>25 participants</div>
 					</div>
 					<hr/>
 					<p style="text-align: justify">
@@ -1760,9 +1857,14 @@
 						<a href="#" data-dismiss="modal">X</a>
 					</div>
 					<hr/>
-					<div style="display:flex">
-						<div class="AJ" style="width:2rem">&nbsp;</div>
-						<div style="margin-left:1rem">Atelier/Jeu</div>
+					<div style="display:flex;justify-content: space-between">
+						<div style="display:flex">
+							<div class="AJ" style="width:2rem;height: 1.5rem">&nbsp;</div>
+							<div style="margin-left:1rem">Atelier / Jeu</div>
+						</div>
+						<div class="limite-participants-details"><i class="material-icons-outlined">
+							lock
+						</i>40 participants</div>
 					</div>
 					<hr/>
 					<p style="text-align: justify">
