@@ -185,3 +185,7 @@ i {
 	display:flex;
 	justify-content: left;
 }
+
+.modal-session {
+	max-width:90% !important;
+}
