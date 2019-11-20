@@ -11,10 +11,15 @@
 </head>
 
 <body onload="isotopeLoad();" onresize="isotopeResize();" class="" style="font-size: 1em;">
+
 	<div class="container-fluid">
 		<div class="flex-row">
 			<h1>Agile Tour Rennes - Vendredi 22 novembre</h1>
-			<!--div class="col-12 alert alert-secondary d-none d-md-block ordi"-->
+
+			<div class="col-12 alert alert-secondary telephone text-center" style="cursor: zoom-in" data-toggle="modal" data-target="#modal-equicoaching">
+				Toute la journée - Equicoaching
+			</div>
+
 			<div class="col-12 alert alert-secondary ordi">
 				<div class="filter-button-group" data-filter-group="FiltresOrdi">
 					<span style="margin-left:50px;">Filtrez sur un horaire : </span>
@@ -77,6 +82,15 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="container-fluid">
+		<div class="flex-row">
+				<div class="col-12 alert alert-secondary ordi text-center" style="cursor: zoom-in" data-toggle="modal" data-target="#modal-equicoaching">
+					Toute la journée - Equicoaching
+				</div>
+		</div>
+	</div>
+
 	<div class="flex-row">
 		<div class="col-12">
 			<div class="grid" style="position: relative; height: 1686px;"><!-- data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "fitRows" }'-->
@@ -711,6 +725,35 @@
 		<button class="bt-infos" type="button" data-toggle="modal" data-target="#infos">
 			<i class="material-icons" style="font-size:3em; color:#ff6600;">info</i>
 		</button>
+	</div>
+
+	<div class="modal fade" id="modal-equicoaching" tabindex="-1" role="dialog" aria-labelledby="#modal-equicoaching-label"
+		 aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-session" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div style="display: flex; justify-content: space-between">
+						<h2>Equicoaching</h2>
+						<a href="#" data-dismiss="modal">X</a>
+					</div>
+					<hr/>
+					<div style="display: flex;align-items: center">
+						<img src="orateurs/equicoaching.png" style="height:8rem"/>
+						<div class="m-2" style="text-align: justify">
+							Un accompagnement innovant et hors du commun pour répondre à vos problématiques professionnelles, managériales, en individuel ou en équipe ?
+							<br/><br/>
+							EC consulting vous propose de vous initier à l'équicoaching sur le Salon Agile Tour Rennes avec des micro séances au contact de nos chevaux.
+							<br/><br/>
+							Cet accompagnement permet une compréhension concrète des actions managériales et de l’impact relationnel de chacun.
+							<br/><br/>
+							L’équicoaching se base sur l’intelligence émotionnelle de l’animal. Le cheval, par un effet miroir, révèle les attitudes et les personnalités. La confrontation entre l’Homme et le cheval s’opère comme un accélérateur de changement.
+							<br/><br/>
+							Venez nous rendre visite et vous inscrire !
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class="modal fade" id="modal-keynote-lja" tabindex="-1" role="dialog" aria-labelledby="#modal-keynote-lja-label"
