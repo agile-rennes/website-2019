@@ -189,3 +189,9 @@ i {
 .modal-session {
 	max-width:90% !important;
 }
+
+.equicoaching {
+	cursor: zoom-in;
+	background-color: #bb8e58 !important;
+	font-weight: bold;
+}
